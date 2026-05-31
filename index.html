@@ -1,0 +1,193 @@
+code
+Html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veoglobe | Apps, Games & Electronic Innovation</title>
+    <style>
+        :root {
+            --bg-color: #121214;
+            --card-bg: #1e1e24;
+            --text-color: #e0e0e6;
+            --accent-color: #4caf50; /* Green representing energy saving */
+            --blue-accent: #2196f3; /* Blue for multimedia/APIs */
+            --muted-text: #a0a0aa;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid #2d2d34;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .header-container h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+            color: #ffffff;
+        }
+
+        .header-container p {
+            margin: 0.5rem 0 0 0;
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            border-left: 4px solid var(--accent-color);
+            padding-left: 10px;
+            color: #ffffff;
+            font-size: 1.8rem;
+        }
+
+        .vision-text {
+            font-size: 1.1rem;
+            color: var(--muted-text);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid #2d2d34;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .card:hover {
+            border-color: #444;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #ffffff;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: rgba(76, 175, 80, 0.1);
+            color: var(--accent-color);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .tag.blue {
+            background-color: rgba(33, 150, 243, 0.1);
+            color: var(--blue-accent);
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1rem;
+            margin-top: 4rem;
+            border-top: 1px solid #2d2d34;
+            font-size: 0.9rem;
+            color: var(--muted-text);
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Veoglobe</h1>
+            <p>Software Development & Electronic Exploration</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Our Vision</h2>
+            <div class="vision-text">
+                <p>
+                    Veoglobe is a personal development project focused on bridging the gap between hardware and software. 
+                    The goal is to create lightweight, efficient mobile applications and games while exploring 
+                    the integration of electronic boards to solve practical problems.
+                </p>
+                <p>
+                    With a particular interest in sustainability, our research aims to develop applications and 
+                    embedded systems that contribute to energy conservation, reducing unnecessary digital and electrical waste.
+                </p>
+            </div>
+        </section>
+
+        <section id="focus-areas">
+            <h2>Development Pillars</h2>
+            <div class="grid">
+                <div class="card">
+                    <span class="tag">Entertainment</span>
+                    <h3>Apps & Mobile Games</h3>
+                    <p>
+                        Developing engaging and user-friendly mobile applications. This includes interactive utility tools and lightweight games designed to run efficiently on a wide range of devices.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span class="tag">Hardware</span>
+                    <h3>Electronic Boards & Energy Saving</h3>
+                    <p>
+                        Designing and programming microcontrollers to interact with physical environments. Our focus is on low-power configurations to promote energy-efficient automation and hobbyist electronics.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span class="tag blue">Infrastructure</span>
+                    <h3>Multimedia APIs</h3>
+                    <p>
+                        Researching and building foundational API frameworks to handle media transport, metadata handling, and localized processing to support standalone applications.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Veoglobe. All rights reserved.</p>
+        <p>
+            <a href="policy.html">Privacy Policy</a>
+        </p>
+    </footer>
+
+</body>
+</html>
